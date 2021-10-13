@@ -43,7 +43,7 @@ namespace CollectionExamples
         {
             Dictionary<int, int[]> dict;
             //something like this?
-            dict.Add(1, int[5] myArry = new int[] { 1,4,9,6,2});
+            //    dict.Add(1, int[5] myArry = new int[] { 1,4,9,6,2});
             //unique keys and an array of numbers tied to that key
 
             Dictionary<int, int> dict2 = new Dictionary<int, int>();

@@ -1,0 +1,12 @@
+﻿Customer Class
+
+Method1
+
+Method2
+
+Method3
+
+Admin Class
+Disctionary<ID, Customer Object> <key, value>
+
+File actions in a finally block
