@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Test5Answer
 {
-    class HnadleWithdrawTransaction
+    class HandleWithdrawTransaction
     {
-        public static Customer 
+        public static void HandleWithdraw(Customer customer)
+        {
+
+        }
     }
 }

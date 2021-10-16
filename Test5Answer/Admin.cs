@@ -26,14 +26,18 @@ namespace Test5Answer
             StreamReader sr = new StreamReader(fs);
 
             string str = sr.ReadLine();
+            //when reading it willl give all the custmers in a string separanted by "_"
+            //thereore need to split it
+
             while(str != null)
             {
                 var strArray = str.Split('_');
-                //changeing double acct balance
+                //changing double acct balance
                 var account_bal = double.Parse(strArray[3]);
                 //changing boolean loan applied
                 var loan_app = bool.Parse(strArray[5]);
 
+                //"customer" gotten from the txt file
                 var customer = new Customer(strArray[0], strArray[1], strArray[4], account_bal, loan_app);
 
                 if (!dictOfCustomer.ContainsKey(strArray[0]))
@@ -56,6 +60,8 @@ namespace Test5Answer
                 Console.WriteLine("Select Option");
                 Console.WriteLine("1) Create Account");
                 Console.WriteLine("2) Withdraw from Account");
+                Console.WriteLine("2) Deposit to Account");
+                Console.WriteLine("4) EXIT");
                 int user_option = Int32.Parse(Console.ReadLine());
 
                 switch (user_option)
@@ -83,8 +89,10 @@ namespace Test5Answer
                         }
                     case 2:
                         {
-                            var user_id = Console.ReadLine();
-                            var customer = dictOfCustomer[customer_id];
+                            var cust_id = Console.ReadLine();
+                            var customer = dictOfCustomer[cust_id];
+                            HandleWithdrawTransaction.HandleWithdraw(customer);
+                            dictOfCustomer[cust_id] = customer;
                             break;
                         }
                         case 4:
@@ -103,6 +111,8 @@ namespace Test5Answer
         {
             //override existing file
             //write content of dic in file 
+
+
 
         }
     }

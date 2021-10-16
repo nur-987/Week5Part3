@@ -31,8 +31,7 @@ namespace Test5Answer
 
         public override string ToString()
         {
-            //put in correct return!
-            return base.ToString();
+            return customer_id + "_" + customer_name + "_" + account_number + "_" + account_balance + "_" + check_book_number + "_" + loan_applied;
         }
 
 

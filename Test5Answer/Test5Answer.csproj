@@ -46,7 +46,7 @@
     <Compile Include="Admin.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="HandleAccountOpening.cs" />
-    <Compile Include="HnadleWithdrawTransaction.cs" />
+    <Compile Include="HandleWithdrawTransaction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
